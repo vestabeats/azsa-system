@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "nodemon --exec ts-node -r tsconfig-paths/register src/index.ts",
     "start": "node build/index.js",
-    "prebuild": "npx rimraf build",
+    "prebuild": "rimraf build",
     "build": "tsc",
     "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -49,8 +49,5 @@
     "mongoose": "^8.5.1",
     "morgan": "^1.10.0",
     "nodemon": "^3.1.4"
-  },
-  "engines": {
-    "node": "16.x"
   }
 }
