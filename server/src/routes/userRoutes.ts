@@ -5,23 +5,23 @@ import { getNotificationsList, markNotificationRead } from "../controllers/attes
 
 const router = express.Router()
 
-router.post("/register", protectRoute,registerUser);
+router.post("/register", registerUser);
 router.post("/login",loginUser)
 router.post("/logout",logOutUser)
-router.get("/getstudents", protectRoute,getStudents)
-router.put("/updateprofile", protectRoute, updateUserProfile);
-router.put("/admchangepassword", protectRoute, isAdminRoute, adminChangeUserPassword);
-router.put("/changepassword", protectRoute, changeUserPassword);
-router.get("/find/:id",protectRoute, getUser)
-router.get("/sidebardata",protectRoute, sideBarData)
-router.get("/studentstats", protectRoute,  getUserStatsByYear)
-router.get("/history",protectRoute, getAllUserHistory);
-router.get("/notifications", protectRoute, getNotificationsList);
-router.put("/read-noti", protectRoute, markNotificationRead);
-router.get("/getattache", protectRoute, getAttache);
-router.get("/getofficials", protectRoute, getOfficials);
-router.get("/getconduct", protectRoute, getConduct);
-router.put("/changeconduct", protectRoute, isAdminRoute, changeConduct);
+router.get("/getstudents", getStudents)
+router.put("/updateprofile",  updateUserProfile);
+router.put("/admchangepassword",  isAdminRoute, adminChangeUserPassword);
+router.put("/changepassword",  changeUserPassword);
+router.get("/find/:id", getUser)
+router.get("/sidebardata",sideBarData)
+router.get("/studentstats",   getUserStatsByYear)
+router.get("/history", getAllUserHistory);
+router.get("/notifications", getNotificationsList);
+router.put("/read-noti",  markNotificationRead);
+router.get("/getattache",  getAttache);
+router.get("/getofficials",  getOfficials);
+router.get("/getconduct", , getConduct);
+router.put("/changeconduct",  isAdminRoute, changeConduct);
 router.delete(
   "/delete-restore/:id?",
   protectRoute, isAdminRoute,
