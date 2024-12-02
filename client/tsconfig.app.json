@@ -10,6 +10,7 @@
     "noEmitOnError": false,
     "suppressImplicitAnyIndexErrors": true,
     "allowJs": true,
+    "ignoreDeprecations": "5.0",
     "checkJs": false,
     "noImplicitAny": false,
     "strict": false,
