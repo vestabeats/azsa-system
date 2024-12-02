@@ -2,6 +2,7 @@ import jwt from "jsonwebtoken";
 import mongoose from "mongoose";
 import { Response } from "express";
 import dotenv from 'dotenv';
+dotenv.config();
 const dbConnection = async () => {
     try {
         await mongoose.connect(process.env.MONGODB_URL as string);
