@@ -1,8 +1,7 @@
 {
   "compilerOptions": {
     "composite": true,
-     "outDir": "./dist",
-     "allowImportingTsExtensions": true,
+    "outDir": "./dist",
     "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
     "target": "ES2020",
     "useDefineForClassFields": true,
@@ -20,7 +19,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": false, // Changed to false to allow code compilation output
+    "noEmit": true, // Set to true if you only want to type-check without emitting output
     "jsx": "react-jsx",
 
     /* Linting */
@@ -28,12 +27,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  
-  "rules": {
-    "@typescript-eslint/no-unused-vars": "off",
-    "@typescript-eslint/explicit-module-boundary-types": "off"
-  },
-
 
   "include": ["src"]
 }
