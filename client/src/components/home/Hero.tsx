@@ -47,7 +47,7 @@ const Hero:React.FC = () => {
              
               <Link
                 to="/help"
-                target='_blank'
+               
                 className="inline-flex items-center justify-center px-5 py-3 text-base font-medium  border text-white border-green-500 rounded-lg bg-green-600 hover:bg-green-500 focus:ring-4 focus:ring-green-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
               >
                 Find Help
@@ -56,7 +56,7 @@ const Hero:React.FC = () => {
               
                <Link
                 to="/policy"
-                target='_blank'
+                
                 className="inline-flex items-center justify-center px-5 py-3 text-base font-medium  border text-gray-800 border-green-500 rounded-lg hover:bg-gray-100  focus:ring-4 focus:ring-green-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
               >
                 Read Policy
