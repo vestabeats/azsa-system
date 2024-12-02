@@ -1,32 +1,27 @@
 {
   "compilerOptions": {
-    "composite": true, // Ensures that TypeScript treats this project as a composite project, useful for projects with dependencies.
-    "outDir": "./dist", // Specifies the output directory for compiled files.
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Path to the build info file for incremental compilation.
-    "target": "ES2020", // Sets the JavaScript language version for the output.
-    "useDefineForClassFields": true, // Uses `define` semantics for class fields as per ECMAScript standard.
-    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Specifies the libraries to include in the compilation (ES2020, DOM, and iterable types).
-    "module": "ESNext", // Uses ESNext module system, compatible with modern bundlers.
-    "skipLibCheck": true, // Skips type checking of declaration files, which can speed up the build process but may hide potential type issues.
-    "noEmitOnError": true, // Ensures that the compiler does not emit files if there are errors.
-    "suppressImplicitAnyIndexErrors": true, // Suppresses errors when indexing with `any` type.
-    "allowJs": true, // Allows JavaScript files to be compiled alongside TypeScript files.
-    "noImplicitAny": false, // Disables reporting on variables with implicit `any` type.
-    "strict": false, // Disables strict type-checking options. Set to `true` for stricter type checks.
-    "moduleResolution": "bundler", // Uses bundler-friendly module resolution, ideal for projects using modern bundlers like Webpack or Vite.
-    "resolveJsonModule": true, // Enables importing JSON modules directly.
-    "isolatedModules": true, // Ensures each file is treated as an isolated module (useful for tooling and build processes).
-    "noEmit": false, // Ensures that the compiler emits files.
-    "jsx": "react-jsx", // Uses the new JSX transform introduced in React 17.
-
-    /* Linting and Safety Options */
-    "noUnusedLocals": true, // Flags unused local variables to help maintain clean code.
-    "noUnusedParameters": true, // Flags unused function parameters to improve code quality.
-    "noFallthroughCasesInSwitch": true, // Ensures there is no fall-through between switch cases, helping prevent bugs.
-
-    /* Suppress deprecation warnings */
-    "ignoreDeprecations": "5.0" // Silences deprecation warnings as of TypeScript 5.0.
+    "composite": true,
+    "outDir": "./dist",
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowJs": true,
+    "noImplicitAny": false,
+    "strict": false,
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": false,
+    "jsx": "react-jsx",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "ignoreDeprecations": "5.0"
   },
-
-  "include": ["src"] // Specifies the directory containing the source code.
+  "include": ["src"]
 }
