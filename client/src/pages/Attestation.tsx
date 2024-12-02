@@ -47,7 +47,7 @@ const Attestation = () => {
   const handleDownload = async (id: string) => {
     try {
         const response = await axios.get(
-            `http://localhost:8800/api/attestation/downloadattest/${id}`,
+            `https://azsa-system-backend.onrender.com/api/attestation/downloadattest/${id}`,
             { responseType: 'blob' }  // Ensure binary data is handled properly
         );
 
