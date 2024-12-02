@@ -22,7 +22,10 @@
     /* Linting and Safety Options */
     "noUnusedLocals": true, // Flags unused local variables to help maintain clean code.
     "noUnusedParameters": true, // Flags unused function parameters to improve code quality.
-    "noFallthroughCasesInSwitch": true // Ensures there is no fall-through between switch cases, helping prevent bugs.
+    "noFallthroughCasesInSwitch": true, // Ensures there is no fall-through between switch cases, helping prevent bugs.
+
+    /* Suppress deprecation warnings */
+    "ignoreDeprecations": "5.0" // Silences deprecation warnings as of TypeScript 5.0.
   },
 
   "include": ["src"] // Specifies the directory containing the source code.
