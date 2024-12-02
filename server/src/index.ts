@@ -16,6 +16,13 @@ app.use(cors({
     credentials:true
 }))
 
+// Handle preflight requests (OPTIONS)
+app.options('*', cors({
+    origin: "https://azsa-system.onrender.com",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+}));
+
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(cookieParser())
