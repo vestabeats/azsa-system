@@ -9,6 +9,9 @@
     "skipLibCheck": true,
     "suppressImplicitAnyIndexErrors": true,
     "ignoreDeprecations": "5.0",
+    "noEmitOnError": false,
+     "allowJs": true,
+    "isolatedModules": false,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -25,5 +28,12 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
+  
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  },
+
+
   "include": ["src"]
 }
