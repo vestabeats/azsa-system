@@ -1,16 +1,20 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vitejs.dev/config/
+// Vite configuration
 export default defineConfig({
   plugins: [react()],
-  server:{
-    port:3000,
-    proxy:{
-      "/api":{
-        target:"https://azsa-system-backend.onrender.com",
-        changeOrigin:true
-      }
-    }
-  }
-})
+  build: {
+    outDir: 'dist', // Output directory for the built files
+  },
+  // Remove or comment out the server part for production deployment
+  // server: {
+  //   port: 3000,
+  //   proxy: {
+  //     '/api': {
+  //       target: 'https://azsa-system-backend.onrender.com',
+  //       changeOrigin: true,
+  //     },
+  //   },
+  // },
+});
