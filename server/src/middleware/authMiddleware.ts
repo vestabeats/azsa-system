@@ -1,7 +1,8 @@
 import { Request, Response, NextFunction } from 'express';
 import jwt, { JwtPayload } from 'jsonwebtoken';
 import User from '../models/user'; 
-
+import dotenv  from "dotenv";
+dotenv.config()
 interface DecodedToken extends JwtPayload {
   userId: string;
 }
