@@ -1,32 +1,32 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "outDir": "./dist",
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "noEmitOnError": false,
-    "suppressImplicitAnyIndexErrors": true,
-    "allowJs": true,
-    "ignoreDeprecations": "5.0",
-    "noImplicitAny": false,
-    "strict": false, // Set this to true if you want strict type-checking enabled
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "moduleDetection": "force",
-    "noEmit": true, // Set to true if you only want to type-check without emitting output
-    "jsx": "react-jsx",
-
+    "composite": true, // Ensures that TypeScript treats this project as a composite project, helpful for projects with dependencies.
+    "outDir": "./dist", // Specifies the output directory for compiled files.
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Path to the build info file for incremental compilation.
+    "target": "ES2020", // Sets the JavaScript language version for the output.
+    "useDefineForClassFields": true, // Use `define` semantics for class fields as per ECMAScript standard.
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Specifies the libraries to include in the compilation (ES2020, DOM, and iterable types).
+    "module": "ESNext", // Use ESNext module system, compatible with modern bundlers.
+    "skipLibCheck": true, // Skips type checking of declaration files, useful for faster builds but can hide potential type issues.
+    "noEmitOnError": false, // Ensures that the compiler will still emit files even if there are errors (use with caution).
+    "suppressImplicitAnyIndexErrors": true, // Suppresses errors when indexing with `any` type.
+    "allowJs": true, // Allows JavaScript files to be compiled.
+    "ignoreDeprecations": "5.0", // Ignores deprecated features as of TypeScript 5.0.
+    "noImplicitAny": false, // Disables reporting on variables with implicit `any` type.
+    "strict": false, // Disables strict type-checking options. Set to `true` for stricter type checks.
+    "moduleResolution": "bundler", // Uses bundler-friendly module resolution, best for projects using modern bundlers.
+    "allowImportingTsExtensions": true, // Allows importing TypeScript files with `.ts` extensions.
+    "resolveJsonModule": true, // Allows importing JSON modules.
+    "isolatedModules": true, // Ensures each file is treated as an isolated module.
+    "moduleDetection": "force", // Forces detection of ES modules.
+    "noEmit": true, // Ensures the compiler does not output files, only type-checks.
+    "jsx": "react-jsx", // Uses the new JSX transform introduced with React 17.
+    
     /* Linting */
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noUnusedLocals": true, // Flags unused local variables.
+    "noUnusedParameters": true, // Flags unused function parameters.
+    "noFallthroughCasesInSwitch": true // Ensures there is no fall-through between switch cases.
   },
 
-  "include": ["src"]
+  "include": ["src"] // Specifies the directory containing the source code.
 }
