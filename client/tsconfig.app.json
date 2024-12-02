@@ -11,21 +11,17 @@
     "suppressImplicitAnyIndexErrors": true,
     "allowJs": true,
     "ignoreDeprecations": "5.0",
-    "checkJs": false,
     "noImplicitAny": false,
-    "strict": false,
-
-    /* Bundler mode */
+    "strict": false, // Set this to true if you want strict type-checking enabled
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "moduleDetection": "force",
-    "noEmit": true,
+    "noEmit": false, // Changed to false to allow code compilation output
     "jsx": "react-jsx",
 
     /* Linting */
-    "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
