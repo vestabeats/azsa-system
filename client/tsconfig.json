@@ -2,6 +2,8 @@
   "compilerOptions": {
     "typeRoots": ["./types/", "./node_modules/@types"],
     "declaration": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
     
   },
   "files": [],
